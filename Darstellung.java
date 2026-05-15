@@ -38,6 +38,7 @@ public class Darstellung
         operationLabel =new JLabel("", SwingConstants.CENTER); 
         ergebnisField = new JTextField();
         button = new JButton("Prüfen!!");
+        button.addActionListener(steuerung);
         feedbackLabel = new JLabel();
         /* Hierarchie herstellen */
         frame.add(panel1);
