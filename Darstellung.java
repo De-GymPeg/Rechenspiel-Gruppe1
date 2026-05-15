@@ -30,13 +30,14 @@ public class Darstellung
         panel2 = new JPanel();
         panel1.setLayout(new GridLayout(0, 1));
         panel2.setLayout(new GridLayout(0, 1));
+        panel2.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.BLUE), "Antwort"));
        
         /* übrige Objekte initialisieren */
-        zahl1Label =new JLabel(); 
-        zahl2Label =new JLabel(); 
-        operationLabel =new JLabel(); 
+        zahl1Label =new JLabel("", SwingConstants.CENTER); 
+        zahl2Label =new JLabel("", SwingConstants.CENTER); 
+        operationLabel =new JLabel("", SwingConstants.CENTER); 
         ergebnisField = new JTextField();
-        button = new JButton();
+        button = new JButton("Prüfen!!");
         feedbackLabel = new JLabel();
         /* Hierarchie herstellen */
         frame.add(panel1);
