@@ -54,4 +54,9 @@ public class Darstellung
         frame.pack();
         frame.setVisible(true);
     }
+    
+    public void feedbackFarbeSetzen(Color farbe)
+    {
+    
+    }
 }
