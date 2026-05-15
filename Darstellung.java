@@ -30,10 +30,24 @@ public class Darstellung
         panel2 = new JPanel();
         panel1.setLayout(new GridLayout(0, 1));
         panel2.setLayout(new GridLayout(0, 1));
-
+       
         /* übrige Objekte initialisieren */
-
+        zahl1Label =new JLabel(); 
+        zahl2Label =new JLabel(); 
+        operationLabel =new JLabel(); 
+        ergebnisField = new JTextField();
+        button = new JButton();
+        feedbackLabel = new JLabel();
         /* Hierarchie herstellen */
+        frame.add(panel1);
+        frame.add(panel2);
+        panel1.add(zahl1Label);
+        panel1.add(operationLabel);
+        panel1.add(zahl2Label);
+        
+        panel2.add(ergebnisField);
+        panel2.add(button);
+        panel2.add(feedbackLabel);
 
         frame.pack();
         frame.setVisible(true);
