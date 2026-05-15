@@ -3,11 +3,11 @@ import java.awt.event.*;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Steuerung implements Observer
+public class Steuerung implements Observer, ActionListener
 {
     Logik logik;
     Darstellung darstellung;
-    
+     
     Steuerung()
     {
         logik = new Logik();
@@ -23,5 +23,10 @@ public class Steuerung implements Observer
             darstellung.zahl2Label.setText("" + logik.zahl2);
             darstellung.operationLabel.setText(logik.operation);
         }
+    }
+    
+    public void actionPerformed(ActionEvent e)
+    {
+        logik.initialisiere();
     }
 }
