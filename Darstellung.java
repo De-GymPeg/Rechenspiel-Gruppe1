@@ -40,6 +40,7 @@ public class Darstellung
         button = new JButton("Prüfen!!");
         button.addActionListener(steuerung);
         feedbackLabel = new JLabel();
+        ergebnisField.addActionListener(steuerung);
         /* Hierarchie herstellen */
         frame.add(panel1);
         frame.add(panel2);
