@@ -27,6 +27,13 @@ public class Steuerung implements Observer, ActionListener
     
     public void actionPerformed(ActionEvent e)
     {
+        if (logik.istRichtig(Integer.parseInt(darstellung.ergebnisField.getText()))) 
+        {
+            darstellung.feedbackFarbeSetzen(Color.GREEN);
+            darstellung.textfeldLeeren();
+        } else {
+            darstellung.feedbackFarbeSetzen(Color.RED);
+        }
         logik.initialisiere();
     }
 }
