@@ -57,6 +57,12 @@ public class Darstellung
     
     public void feedbackFarbeSetzen(Color farbe)
     {
+        feedbackLabel.setOpaque(true);
+        feedbackLabel.setBackground(farbe);
+    }
     
+    public void textfeldLeeren()
+    {
+        ergebnisField.setText("");
     }
 }
